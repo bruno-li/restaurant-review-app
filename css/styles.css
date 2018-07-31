@@ -141,7 +141,6 @@ nav h1 a {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -217,7 +216,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;

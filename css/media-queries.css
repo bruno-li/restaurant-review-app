@@ -2,10 +2,24 @@
 /* MEDIA QUERIES */
 /* Any style here will only apply if the screen is under 800px */
 
-/* @media(max-width: 800px) {
-    {
-    }
-} */
+@media(max-width: 600px) {
+  
+    .inside #map-container {
+    height: 400px;
+    width: 100%;
+    background-color: #ccc;
+    background: blue none repeat scroll 0 0; 
+    position: relative;
+  } 
+
+  #breadcrumb {
+    width: 100%;
+}
+} 
+
+
+
+
 
 /* Any style here will only apply if the screen is under 500px */
 @media(max-width: 380px) {
@@ -15,4 +29,6 @@
         width: 90%;
         flex-direction: column;
       }
+
+      
 }
