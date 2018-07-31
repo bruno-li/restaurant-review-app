@@ -1,0 +1,18 @@
+
+/* MEDIA QUERIES */
+/* Any style here will only apply if the screen is under 800px */
+
+/* @media(max-width: 800px) {
+    {
+    }
+} */
+
+/* Any style here will only apply if the screen is under 500px */
+@media(max-width: 380px) {
+    .filter-options {
+        padding: 10px 0;
+        height: 100%;
+        width: 90%;
+        flex-direction: column;
+      }
+}
