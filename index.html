@@ -19,7 +19,7 @@
   </header>
 
   <main id="maincontent" role="main">
-
+<!-- aria label and role for accessibility -->
     <section id="map-container" aria-label="google map">
       <div id="map" role="application"></div>
     </section>
@@ -27,14 +27,15 @@
     <section id="filter-container">
       <div class="filter-options">
         <h2>Filter Results</h2>
+        <!-- tab index for screen readers -->
         <select id="neighborhoods-select" tabindex="1" name="neighborhoods" aria-label="select neighborhood" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
 
         <select id="cuisines-select" tabindex="2" name="cuisines" aria-label="select cusisine" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
-        
         </select>
+        
       </div>
             <ul id="restaurants-list"></ul>
     </section>
