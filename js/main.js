@@ -125,11 +125,11 @@ resetRestaurants = (restaurants) => {
  * Create all restaurants HTML and add them to the webpage.
  */
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
-  let tabIndex = 3; //creates tab index for accessibility, indexed 1 and 2 its on the index.html
+  let tabIndex = 3; //creates tab index for accessibility, indexed 1 and 2 set on the index.html
   const ul = document.getElementById('restaurants-list');
   restaurants.forEach(restaurant => {
     ul.append(createRestaurantHTML(restaurant, tabIndex));
-    tabIndex++; // increase tab index for accessibility
+    tabIndex++; // increase tab index 
   });
   addMarkersToMap();
 }
@@ -159,8 +159,8 @@ createRestaurantHTML = (restaurant, tabIndex) => {
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
-   more.setAttribute('tabindex', tabIndex.toString()); // sets tabindex and parse to string
-  more.setAttribute('aria-label',`View Details For ${restaurant.name} Restaurant`)
+  more.setAttribute('tabindex', tabIndex.toString()); // sets tabindex and parse to string
+  more.setAttribute('aria-label',`View Details For ${restaurant.name} Restaurant`); // sets aria label for accessibility
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
 
