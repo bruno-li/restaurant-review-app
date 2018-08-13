@@ -148,6 +148,7 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 
 /* add display flex for responsiviness  */
+
 .filter-options {
     display: flex;
     align-items: center;
@@ -240,8 +241,6 @@ nav h1 a {
     text-decoration: none;
     text-transform: uppercase;
 }
-
-
 
 /* ====================== Restaurant Details, restaurant.html page ====================== */
 

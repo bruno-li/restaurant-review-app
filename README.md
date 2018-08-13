@@ -23,3 +23,5 @@ In this project our task is to make our app offline first to enhance user experi
 2. With your server running, visit the site: `http://localhost:8989`.
 
 3. If you choose a different port for the server, remember to modify the file dbHelper.js to enter the correct host for your server.
+
+4. For more information check INSTRUCTIONS.md file.

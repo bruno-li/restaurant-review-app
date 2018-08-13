@@ -1,10 +1,11 @@
+// label  for saving cache in the browser
 let cacheName = "restaurants-review-cache-v2";
 
 // fetches url for use
 let cacheUrls = [
   "./",
   "./sw_registration.js",
-  "index.html",  
+  "index.html",
   "restaurant.html",
   "css/styles.css",
   "data/restaurants.json",
@@ -26,25 +27,25 @@ let cacheUrls = [
 //open and install the cash array, and perform install steps
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches
-      .open(cacheName)
-      .then(function (cache) {
-        console.log('Opened Cache'); // warning console message for verification 
-        return cache.addAll(cacheUrls);
-      })
+    caches.open(cacheName).then(function(cache) {
+      console.log("Opened Cache");
+      return cache.addAll(cacheUrls);
+    })
   );
 });
 
-self.addEventListener('activate',  event => {
+self.addEventListener("activate", event => {
   //activate service worker
   event.waitUntil(self.clients.claim());
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener("fetch", event => {
   event.respondWith(
-    caches.match(event.request, {ignoreSearch:true}).then(response => {
-      return response || fetch(event.request); // return if a match in the cache, or return original request if no match
-    })
-    .catch(err => console.log(err, event.request))
+    caches
+      .match(event.request, { ignoreSearch: true })
+      .then(response => {
+        return response || fetch(event.request); // return if a match in the cache, or return original request if no match
+      })
+      .catch(err => console.log(err, event.request))
   );
 });

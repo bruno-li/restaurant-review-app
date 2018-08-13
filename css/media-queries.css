@@ -1,77 +1,77 @@
 /* ====================== Index/Home Responsiviness ====================== */
 
 @media screen and (max-width: 398px) {
-    .container {
-        margin: 30px 5px 0;
-    }
-    #restaurants-list li {
-        width: calc(100% - 30px);
-    }
-    .filter-options {
-        height: 100%;
-        padding: 10px 0;
-        flex-direction: column;
-    }
+  .container {
+    margin: 30px 5px 0;
+  }
+  #restaurants-list li {
+    width: calc(100% - 30px);
+  }
+  .filter-options {
+    height: 100%;
+    padding: 10px 0;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 464px) {
-    .container {
-        margin: 30px 15px 0px;
-    }
-    #restaurants-list li {
-        width: calc(50% - 30px);
-    }
+  .container {
+    margin: 30px 15px 0px;
+  }
+  #restaurants-list li {
+    width: calc(50% - 30px);
+  }
 }
 
 @media screen and (min-width: 780px) {
-    #restaurants-list li {
-        width: calc(33.3333% - 30px);
-    }
+  #restaurants-list li {
+    width: calc(33.3333% - 30px);
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    #restaurants-list li {
-        width: calc(25% - 30px);
-    }
+  #restaurants-list li {
+    width: calc(25% - 30px);
+  }
 }
 
 @media screen and (min-width: 1400px) {
-    #restaurants-list li {
-        width: calc(20% - 30px);
-    }
+  #restaurants-list li {
+    width: calc(20% - 30px);
+  }
 }
 
 /* ======================  Restaurant Details Responsiviness ====================== */
 
 @media screen and (max-width: 801px) {
-    #breadcrumb {
-        width: 100%;
-        padding: 10px 5px 16px;
-    }
-    .inside #map-container {
-        height: 400px;
-        position: relative;
-        top: 121px;
-        width: 100%;
-    }
-    #restaurant-container,
-    #reviews-container {
-        width: 100%;
-        padding: 0;
-        margin: 10px 0 10px;
-        position: relative;
-        top: 121px;
-    }
-    #restaurant-name {
-        margin: 10px;
-    }
-    #reviews-list li {
-        padding: 0;
-    }
-    .inside #footer {
-        position: relative;
-        width: 100%;
-        top: 121px;
-        padding: 25px 0 25px;
-    }
+  #breadcrumb {
+    width: 100%;
+    padding: 10px 5px 16px;
+  }
+  .inside #map-container {
+    height: 400px;
+    position: relative;
+    top: 121px;
+    width: 100%;
+  }
+  #restaurant-container,
+  #reviews-container {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 10px;
+    position: relative;
+    top: 121px;
+  }
+  #restaurant-name {
+    margin: 10px;
+  }
+  #reviews-list li {
+    padding: 0;
+  }
+  .inside #footer {
+    position: relative;
+    width: 100%;
+    top: 121px;
+    padding: 25px 0 25px;
+  }
 }
