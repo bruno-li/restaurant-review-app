@@ -328,6 +328,14 @@ nav h1 a {
     padding-bottom: 1pt;
 }
 
+#reviews-container h3 {
+    color: orange;
+    font-size: 18pt;
+    font-weight: 300;
+    text-align: center;
+  
+}
+
 #reviews-list {
     margin: 0;
     padding: 0;
